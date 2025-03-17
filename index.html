@@ -3,7 +3,7 @@
 <html lang="en-ca">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="The Street Address program" />
+    <meta name="description" content="Address, with a JS file" />
     <meta name="keywords" content="mths, icd2o" />
     <meta name="author" content="Bain Liao" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,7 +34,7 @@
       href="./favicon-16x16.png"
     />
     <link rel="manifest" href="./site.webmanifest" />
-    <title>The Street Address program, JS</title>
+    <title>Address, with a JS file</title>
   </head>
 
   <body>
@@ -43,14 +43,14 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">The Street Address program, JS</span>
+          <span class="mdl-layout-title">Address, with a JS file</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <div class="right-image">
           <img src="./images/the-creature.png" alt="the creature" />
         </div>
-        <div class="page-content">Please enter the following:</div>
+        <h1 class="page-content">Please enter the following:</h1>
         <br />
         <form>
           <!-- Numeric Textfield -->
@@ -70,12 +70,8 @@
           <!-- Simple Textfield -->
           <p>Street Name</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              id="street-name"
-            />
-            <label class="mdl-textfield__label" for="sample1"
+            <input class="mdl-textfield__input" type="text" id="street-name" />
+            <label class="mdl-textfield__label" for="street-name"
               >Street name ...</label
             >
           </div>
@@ -83,7 +79,7 @@
           <!-- Raised button with ripple -->
           <button
             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="buttonClicked()"
+            onclick="enterClicked()"
             type="button"
           >
             Enter
@@ -91,7 +87,9 @@
         </form>
         <br />
         <div class="page-content-answer">
-          <div id="user-info"></div>
+          <div id="user-address">
+            <p>Your address is:</p>
+          </div>
         </div>
       </main>
     </div>

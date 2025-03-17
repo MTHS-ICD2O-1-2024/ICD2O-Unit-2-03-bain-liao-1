@@ -7,11 +7,11 @@
 /**
  * Do basic math.
  */
-function buttonClicked() {
+function enterClicked() {
   // input
   const streetName = document.getElementById("street-name").value
   const streetNumber = parseInt(document.getElementById("street-number").value)
   // output
-  document.getElementById("user-info").innerHTML =
-    "Your info is: " + streetNumber + ", " + streetName + "."
+  document.getElementById("user-address").innerHTML =
+    "<p>Your address is: " + streetNumber + ", " + streetName + ". </p>"
 }
